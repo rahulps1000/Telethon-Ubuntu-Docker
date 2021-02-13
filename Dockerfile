@@ -23,6 +23,7 @@ RUN apt-get update -y && \
     cd shell-bot && \
     npm install && \
     pip3 install -U -r telethon
+    pip3 install -U -r pyrogram
 COPY config.json /shell-bot/config.json
 COPY autostartup.sh /root/
 COPY vnc-start.sh /vnc-start.sh
