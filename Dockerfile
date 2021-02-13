@@ -22,8 +22,8 @@ RUN apt-get update -y && \
     git clone https://github.com/botgram/shell-bot.git && \
     cd shell-bot && \
     npm install && \
-    pip3 install -U -r telethon && \
-    pip3 install -U -r pyrogram
+    pip3 install -U telethon && \
+    pip3 install -U pyrogram
 COPY config.json /shell-bot/config.json
 COPY autostartup.sh /root/
 COPY vnc-start.sh /vnc-start.sh
